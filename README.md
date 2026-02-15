@@ -20,7 +20,7 @@ michael.cretignier@physics.ox.ac.uk
 Using conda:
 
 ```bash
-conda create -n finch python=3.12
+conda create -n finch python=3.12.5
 conda activate finch
 pip install finch
 ```
@@ -61,7 +61,7 @@ Move inside the `FINCH/` directory and launch an IPython shell:
 ```bash
 [TERMINAL]
 conda activate finch
-cd .../GitHub/FINCH
+cd .../GitHub/FINCH/
 ipython
 ```
 
