@@ -127,3 +127,9 @@ The code estimates the uncertainties on all the parameters by bootstrap using th
 The code contains an automatic mode that compares different pre-registered models and selects the one producing the sharpest likelihood. 
 
 A Gaussian-Process can then be run using as initial guess the output of the previous fit ensuring stability. 
+
+
+```
+[TERMINAL] 
+conda remove --name finch --all
+```
