@@ -30,7 +30,7 @@ pip install finch
 
 ## Installation (Git Clone)
 
-Download the directory and try to run the minimal example ```example.py``` with your own Python installation.
+Download the directory and try to run the minimal example `example.py` with your own Python installation.
 If it crashes, install a Python environment:
 
  [Mac M4 Chip] Python environment (Conda install) (Python 3.12.5)
@@ -59,7 +59,7 @@ pip install -r requirements_3.12.5.txt
 
 ## Test minimal example
 
-Move inside the ```FINCH``` directory and launch an iPython shell:
+Move inside the `FINCH` directory and launch an iPython shell:
 
 ```bash
 [TERMINAL]
@@ -68,7 +68,7 @@ cd .../GitHub/FINCH
 ipython
 ```
 
-Then run the example using the magic matplotlib command line ```%matplotlilb``` :
+Then run the example using the magic matplotlib command line `%matplotlilb` :
 
 ```python
 [IPYTHON]
