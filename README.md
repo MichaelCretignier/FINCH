@@ -19,7 +19,14 @@ https://github.com/MichaelCretignier/FINCH
 
 ## Installation (Pip install) 
 
-Soon...
+
+Using conda:
+
+```bash
+conda create -n finch python=3.12
+conda activate finch
+pip install finch
+```
 
 ## Installation (Git Clone)
 
@@ -68,7 +75,6 @@ Then run the example using the magic matplotlib command line ```%matplotlilb``` 
 %matplotlib
 run example.py
 ```
-
 
 
 ## FINCH file format
