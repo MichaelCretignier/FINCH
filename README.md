@@ -35,21 +35,21 @@ If it crashes, install a Python environment:
 
  [Mac M4 Chip] Python environment (Conda install) (Python 3.12.5)
 
-```
+```bash
 [TERMINAL]
 conda create -n finch -c conda-forge python=3.12.5 numpy=1.26.4 pandas=2.3.2 scipy=1.16.2 matplotlib=3.10.6 ipython=9.5.0 colorama=0.4.6 scikit-learn=1.7.2 -y 
 ```
 
  [Mac Intel Chip] Python environment (Conda install) (Python 3.8.8)
 
-```
+```bash
 [TERMINAL]
 conda create -n finch -c conda-forge python=3.8.8 numpy=1.23.5 pandas=1.4.1 scipy=1.8 matplotlib=3.5 ipython=7.22.0 colorama=0.4.4 scikit-learn=0.24.1 -y 
 ```
 
 [Alternative to conda] Python environment (Venv install)
 
-```
+```bash
 [TERMINAL]
 python3 -m venv finch
 source finch/bin/activate 
@@ -61,7 +61,7 @@ pip install -r requirements_3.12.5.txt
 
 Move inside the ```FINCH``` directory and launch an iPython shell:
 
-```
+```bash
 [TERMINAL]
 conda activate finch
 cd .../GitHub/FINCH
@@ -70,7 +70,7 @@ ipython
 
 Then run the example using the magic matplotlib command line ```%matplotlilb``` :
 
-```
+```python
 [IPYTHON]
 %matplotlib
 run example.py
@@ -92,7 +92,7 @@ flag=1 data are rejected of FINCH analysis, but preserved in the plots
 
 FINCH can create a ```tableXY``` object by loading right formatted .csv table and specifying the stellar object:
 
-```
+```python
 [IPYTHON]
 import finch as Finch
 vec = Finch.import_csv(
