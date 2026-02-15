@@ -19,7 +19,6 @@ https://github.com/MichaelCretignier/FINCH
 
 ## Installation (Pip install) 
 
-
 Using conda:
 
 ```bash
@@ -33,14 +32,14 @@ pip install finch
 Download the directory and try to run the minimal example `example.py` with your own Python installation.
 If it crashes, install a Python environment:
 
- [Mac M4 Chip] Python environment (Conda install) (Python 3.12.5)
+[Mac M4 Chip] Python environment (Conda install) (Python 3.12.5)
 
 ```bash
 [TERMINAL]
 conda create -n finch -c conda-forge python=3.12.5 numpy=1.26.4 pandas=2.3.2 scipy=1.16.2 matplotlib=3.10.6 ipython=9.5.0 colorama=0.4.6 scikit-learn=1.7.2 -y 
 ```
 
- [Mac Intel Chip] Python environment (Conda install) (Python 3.8.8)
+[Mac Intel Chip] Python environment (Conda install) (Python 3.8.8)
 
 ```bash
 [TERMINAL]
@@ -75,7 +74,6 @@ Then run the example using the magic matplotlib command line `%matplotlilb` :
 %matplotlib
 run example.py
 ```
-
 
 ## FINCH file format
 
