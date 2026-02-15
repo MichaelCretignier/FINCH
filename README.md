@@ -12,7 +12,7 @@ michael.cretignier@physics.ox.ac.uk
 
 ## Description
 
-Finch is a Python package to fit the stellar magnetic cycle periods on activity proxies' time series.
+FINCH is a Python package to fit the stellar magnetic cycle periods on activity proxies' time series.
 The code is fast and outlier-robust in order to deliver a period and its related uncertainty in a few seconds.
 
 https://github.com/MichaelCretignier/FINCH
