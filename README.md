@@ -40,6 +40,16 @@ conda create -n finch -c conda-forge python=3.12.5 numpy=1.26.4 pandas=2.3.2 sci
 conda create -n finch -c conda-forge python=3.8.8 numpy=1.23.5 pandas=1.4.1 scipy=1.8 matplotlib=3.5 ipython=7.22.0 colorama=0.4.4 scikit-learn=0.24.1 -y 
 ```
 
+[Alternative to conda] Python environment (Venv install)
+
+```
+[TERMINAL]
+python3 -m venv finch
+source finch/bin/activate 
+pip install --upgrade pip 
+pip install -r requirements_3.12.5.txt
+```
+
 ## Test minimal example
 
 Move inside the ```FINCH``` directory and launch an iPython shell:
