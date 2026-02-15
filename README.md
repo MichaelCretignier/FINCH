@@ -90,7 +90,7 @@ FINCH input tables are typical .csv files containing at minimum 6 columns:
 
 flag=1 data are rejected of FINCH analysis, but preserved in the plots
 
-FINCH can create a ```tableXY``` object by loading right formatted .csv table and specifying the stellar object:
+FINCH can create a `tableXY` object by loading right formatted .csv table and specifying the stellar object:
 
 ```python
 [IPYTHON]
@@ -135,7 +135,7 @@ The code contains an automatic mode that compares different pre-registered model
 A Gaussian-Process can then be run using as initial guess the output of the previous fit ensuring stability. 
 
 
-```
+```bash
 [TERMINAL] 
 conda remove --name finch --all
 ```
