@@ -4,18 +4,18 @@
   <img src="logo.png" alt="Project logo" width="750">
 </p>
 
-FINCH is a Python package to fit the stellar magnetic cycle periods on activity proxies' time series.
-The code is fast and outlier-robust in order to deliver a period and its related uncertainty in a few seconds.
+FINCH is a Python package designed to fit stellar magnetic cycle periods from activity proxy time series.
+The code is fast and robust to outliers, delivering a period estimate and its associated uncertainty within a few seconds.
 
 https://github.com/MichaelCretignier/FINCH
 
 ## Contact Me
 
-If you have any problem, please contact me at:
+If you encounter any issues, please contact me at:
 
 michael.cretignier@physics.ox.ac.uk
 
-## Installation (Pip install) 
+## Installation (pip install) 
 
 Using conda:
 
@@ -56,7 +56,7 @@ pip install -r requirements_3.12.5.txt
 
 ## Test minimal example
 
-Move inside the `FINCH` directory and launch an iPython shell:
+Move inside the `FINCH/` directory and launch an IPython shell:
 
 ```bash
 [TERMINAL]
@@ -65,7 +65,7 @@ cd .../GitHub/FINCH
 ipython
 ```
 
-Then run the example using the magic matplotlib command line `%matplotlilb` :
+Then run the example using the magic matplotlib command line `%matplotlib` :
 
 ```python
 [IPYTHON]
@@ -75,16 +75,16 @@ run example.py
 
 ## FINCH file format
 
-FINCH input tables are typical .csv files containing at minimum 6 columns: 
+FINCH input tables are typical `.csv` files containing at minimum 6 columns: 
 
 1) jdb (jdb - 2,400,000)
 2) proxy (MHK in %)
-3) proxy uncertainties 
-4) instrument (spectrograph) 
-5) reference (sources) 
+3) proxy uncertainties
+4) instrument (spectrograph)
+5) reference (sources)
 6) flag (binary)
 
-flag=1 data are rejected of FINCH analysis, but preserved in the plots
+Data with `flag=1` are rejected of FINCH analysis, but preserved in the plots.
 
 FINCH can create a `tableXY` object by loading right formatted .csv table and specifying the stellar object:
 
@@ -102,11 +102,11 @@ vec = Finch.import_csv(
 
 ```
 
-Stellar atmospheric parameters are optional but a good habit to get.
+Stellar atmospheric parameters are optional but recommended.
 
 ## Citations
 
-Even if FINCH has never been properly presented in a paper, since this method was initially a standard analysis of the YARARA pipeline of Cretignier et al., 2021 paper, please cite it as a "publicly available function of the YARARA pipeline". 
+Although FINCH has not yet been formally presented in a dedicated paper, as the method originates from the YARARA pipeline described in Cretignier et al. (2021), please cite it as a "publicly available function of the YARARA pipeline". 
 
 The MHK activity index was explained in Cretignier et al. 2024a and 2024b.
 
@@ -118,17 +118,17 @@ ADS Link :
 
 ## Details Description of the Algorithm
 
-FINCH concat over different sources/references, but keep traces of the instruments for the offsets. 
+FINCH combines data from different sources while keeping track of instrument-dependent offsets.
 
-The magnetic cycle model is a simple sinusoids that includes polynomial drift and instrumental offsets.
+The magnetic cycle model is a simple sinusoid that includes polynomial drift and instrumental offsets.
 
 Uncertainties are derived using intra-season jitter (induced by the instrumental noise and stellar rotation).
 
-The code estimates the uncertainties on all the parameters by bootstrap using the advantage of the simple multilinear model optimized via a least-square matrix inversion. 
+Parameter uncertainties are estimated via bootstrap, leveraging the simplicity of the multilinear model optimized through least-squares matrix inversion.
 
 The code contains an automatic mode that compares different pre-registered models and selects the one producing the sharpest likelihood. 
 
-A Gaussian-Process can then be run using as initial guess the output of the previous fit ensuring stability. 
+A Gaussian Process can then be run using the previous fit as an initial guess, ensuring stability.
 
 
 ```bash
