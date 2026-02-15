@@ -63,7 +63,7 @@ run example.py
 
 ## FINCH file format
 
-Finch input tables are typical .csv files containing at minimum 6 columns: 
+FINCH input tables are typical .csv files containing at minimum 6 columns: 
 
 1) jdb (jdb - 2,400,000)
 2) proxy (MHK in %)
@@ -74,7 +74,7 @@ Finch input tables are typical .csv files containing at minimum 6 columns:
 
 flag=1 data are rejected of FINCH analysis, but preserved in the plots
 
-Finch can create a ```tableXY``` Finch ```vec``` object by loading right formatted .csv table and specifying the stellar object:
+FINCH can create a ```tableXY``` object by loading right formatted .csv table and specifying the stellar object:
 
 ```
 [IPYTHON]
@@ -94,7 +94,7 @@ Stellar atmospheric parameters are optional but a good habit to get.
 
 ## Citations
 
-Even if Finch has never been properly presented in a paper, since this method was initially a standard analysis of the YARARA pipeline of Cretignier et al., 2021 paper, please cite it as a "publicly available function of the YARARA pipeline". 
+Even if FINCH has never been properly presented in a paper, since this method was initially a standard analysis of the YARARA pipeline of Cretignier et al., 2021 paper, please cite it as a "publicly available function of the YARARA pipeline". 
 
 The MHK activity index was explained in Cretignier et al. 2024a and 2024b.
 
@@ -102,7 +102,7 @@ ADS Link :
 
 1) [Cretignier et al. 2021] https://ui.adsabs.harvard.edu/abs/2021A%26A...653A..43C/abstract
 2) [Cretignier et al. 2024a] https://ui.adsabs.harvard.edu/abs/2024MNRAS.527.2940C/abstract
-3) [Cretignier et al. 2024b] https://ui.adsabs.harvard.edu/abs/2024MNRAS.527.2940C/abstract
+3) [Cretignier et al. 2024b] https://ui.adsabs.harvard.edu/abs/2024MNRAS.535.2562C/abstract
 
 ## Details Description of the Algorithm
 
